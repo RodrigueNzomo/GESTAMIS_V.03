@@ -1,0 +1,26 @@
+{
+  "name": "GESTAMIS_V.03",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.11.0",
+    "mongoose": "^8.8.2",
+    "nodemailer": "^6.9.16"
+  },
+  "devDependencies": {
+    
+    "concurrently": "^9.1.0"
+  },
+  "scripts": {
+    "start": "node server.js", 
+    "client": "npm start --prefix frontend", 
+    "dev": "concurrently \"npm run start\" \"npm run client\"", 
+  },
+ 
+}
